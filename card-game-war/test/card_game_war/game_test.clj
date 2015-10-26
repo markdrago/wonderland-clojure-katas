@@ -12,7 +12,7 @@
   (testing "kings are higher rank than queens"
     (is (true? (card-gt [:spade :king] [:spade :queen]))))
   (testing "aces are higher rank than kings"
-    (is (true? (card-gt [:spade "ace"] [:spade :king]))))
+    (is (true? (card-gt [:spade :ace] [:spade :king]))))
   (testing "if the ranks are equal, clubs beat spades"
     (is (true? (card-gt [:club 5] [:spade 5]))))
   (testing "if the ranks are equal, diamonds beat clubs"
